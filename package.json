@@ -2,7 +2,7 @@
   "private": true,
   "name": "Notes",
   "homepage": "https://imehr.github.io/notes/",
-  "twitter": "@imehr",
+  "twitter": "imehr",
   "repository": "https://github.com/imehr/notes.git",
   "scripts": {
     "lint:js": "eslint --ignore-path .gitignore --fix .",
@@ -125,6 +125,7 @@
     "react-router": "^2.3.0",
     "react-svg-inline": "^1.1.0",
     "react-topbar-progress-indicator": "^1.0.0",
+    "react-mdl": "^1.7.2",
     "redux": "^3.0.0",
     "style-loader": "^0.13.0",
     "stylelint": "^7.2.0",
@@ -132,5 +133,6 @@
     "webpack": "^1.11.0",
     "whatwg-fetch": "^0.11.0",
     "phenomic": "^0.20.0"
+
   }
 }

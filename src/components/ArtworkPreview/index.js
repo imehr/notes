@@ -39,7 +39,8 @@ ArtworkPreview.propTypes = {
   __url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
-  thumbnail: PropTypes.object,
+  thumbnailImage: PropTypes.string,
+  thumbnailCaption: PropTypes.string,
 }
 
 export default ArtworkPreview

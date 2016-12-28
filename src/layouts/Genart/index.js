@@ -1,5 +1,5 @@
 import React, { PropTypes } from "react"
-import { Content, Grid, Cell, Card } from "react-mdl"
+import {Grid, Cell } from "react-mdl"
 
 import Page from "../Page"
 

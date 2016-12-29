@@ -9,7 +9,7 @@ const defaultNumberOfPosts = 6
 
 const LatestArtworks = (props, { collection }) => {
   const latestArtworks = enhanceCollection(collection, {
-    filter: { layout: "Genart" },
+    filter: { layout: "Artwork" },
     sort: "date",
     reverse: true,
   })
@@ -17,9 +17,11 @@ const LatestArtworks = (props, { collection }) => {
 
   return (
     <div>
+      {/*
       <h2 className={ styles.latestArtworks }>
         { "Latest Posts" }
       </h2>
+      */}
       <ArtworksList pages={ latestArtworks } />
     </div>
   )

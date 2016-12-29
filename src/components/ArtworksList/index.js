@@ -1,4 +1,5 @@
 import React, { PropTypes } from "react"
+import {Grid, Cell } from "react-mdl"
 
 import ArtworkPreview from "../ArtworkPreview"
 
@@ -10,14 +11,34 @@ const ArtworksList = ({ pages }) => {
       {
       pages.length
       ? (
-        <ul className={ styles.list }>
-          {
-          pages.map((page) => (
-            <li key={ page.title }><ArtworkPreview { ...page } /></li>
-          ))
-        }
-        </ul>
+
+        
+
+
+        <Grid style={{width: '100%', margin: 'auto'}}>
+          { pages.map((page) => (
+            <Cell
+              key={ page.__url  }
+              col={ 2 }
+              phone={ 2 }
+              tablet={ 2 }
+            >
+              <ArtworkPreview { ...page } />
+
+            </Cell>
+          )) }
+        </Grid>
+
+
+
+
+
+
       )
+
+
+
+
       : "No posts yet."
     }
     </div>
@@ -29,3 +50,29 @@ ArtworksList.propTypes = {
 }
 
 export default ArtworksList
+
+{/*
+
+      <Grid className={ classNames(styles.posts) }>
+        { posts.map((post) => (
+          <Cell
+            key={ post.__url }
+            col={ 12 }
+            shadow={ 0 }
+          >
+            <PostPreview
+              __url={ post.__url }
+              date={ post.date }
+              title={ post.title }
+              description={ post.description }
+              image={ post.image }
+            />
+          </Cell>
+          ))
+        }
+      </Grid>
+
+*/}
+
+
+

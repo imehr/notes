@@ -1,13 +1,13 @@
 import React from "react"
 
 import LatestArtworks from "../../components/LatestArtworks"
-import Page from "../Page"
+import PageArtwork from "../PageArtwork"
 
 const Artworks = (props) => {
   return (
-    <Page { ...props }>
+    <PageArtwork { ...props }>
       <LatestArtworks />
-    </Page>
+    </PageArtwork>
   )
 }
 

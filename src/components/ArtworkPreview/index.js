@@ -3,24 +3,27 @@ import { Link } from "phenomic"
 
 import styles from "./index.css"
 
-const ArtworkPreview = ({ __url, date, thumbnailImage,thumbnailCaption }) => {
+const ArtworkPreview = ({ __url, date, thumbnail }) => {
   const pageDate = date ? new Date(date) : null
-
+  const theThumbnail = thumbnail
   return (
     <div className={ styles.wrapper }>
       <Link to={ __url } className={ styles.title }>
         <div>
           <img
-            src={thumbnailImage} 
+            src={theThumbnail.image} 
             width="100"
             height="100"
           />
         </div>
+      {/*
         <span className={ styles.meta }>
-          {thumbnailCaption }          
+          {theThumbnail.caption }          
         </span>
-
+      */}
       </Link>
+      
+{/*
        <div className={ styles.meta }>
          {
            pageDate &&
@@ -29,7 +32,7 @@ const ArtworkPreview = ({ __url, date, thumbnailImage,thumbnailCaption }) => {
              </time>
          }
        </div>
-
+*/}
 
     </div>
   )
@@ -39,8 +42,8 @@ ArtworkPreview.propTypes = {
   __url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string,
-  thumbnailImage: PropTypes.string,
-  thumbnailCaption: PropTypes.string,
+  thumbnail: PropTypes.opject,
+  
 }
 
 export default ArtworkPreview

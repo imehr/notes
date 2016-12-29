@@ -1,7 +1,7 @@
 ---
 title: My Second artwork!
 date: 2016-02-16
-layout: Genart
+layout: Artwork
 artworks:
 - name: name1'
   title: Title 1'
@@ -25,6 +25,7 @@ caption:
   line3: text in line 3'
   line4: text in line 4'
   credit: text for credit'
-thumbnailImage: https://c5.staticflickr.com/8/7298/15779313604_4f71625bc0_t.jpg 
-thumbnailCaption: Artwork2 caption
+thumbnail:
+  image: https://c5.staticflickr.com/8/7298/15779313604_4f71625bc0_t.jpg 
+  caption: Artwork2 caption
 ---

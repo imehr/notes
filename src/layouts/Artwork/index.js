@@ -1,20 +1,23 @@
 import React, { PropTypes } from "react"
 import {Grid, Cell } from "react-mdl"
+import {browserHistory} from "phenomic/lib/client"
 
-import Page from "../Page"
+import PageArtwork from "../PageArtwork"
 
 import styles from "./index.css"
 
-const Genart = (props) => {
+const Artwork = (props) => {
   // it's up to you to choose what to do with this layout ;)
   const pageDate = props.head.date ? new Date(props.head.date) : null
   const artworks = props.head.artworks
   const caption = props.head.caption
   return (
-    <Page
+    <PageArtwork
       { ...props }
       header={
         <div>
+          
+          {/* 
           <header className={ styles.header }>
             {
               pageDate &&
@@ -23,23 +26,33 @@ const Genart = (props) => {
               </time>
             }
           </header>
+          */}
 
-
-        <Grid>
-          { artworks.map((artwork) => (
+        <Grid style={{width: '100%', margin: 'auto'}}>
+          { artworks.map((theArtwork) => (
             <Cell
-              key={ artwork.name }
-              col={ 2 }
-              phone={ 2 }
+              key={ theArtwork.name }
+              col={ 12 }
+              phone={ 12 }
+              tablet={ 12 }
             >
-              <img src={ artwork.image } />
-              <h4>{ artwork.title }</h4>
-              <p>{ artwork.description }</p>
+              <img 
+                className={ styles.img }
+                src={ theArtwork.image } />
+              {/*
+              <h4>{ theArtwork.title }</h4>
+              <p>{ theArtwork.description }</p> 
+              */}
+
             </Cell>
           )) }
         </Grid>
-        <hr />
-        <p>
+
+
+        
+        <p 
+          className={ styles.txt }
+        >
           {caption.line1}
           <br />
           {caption.line2}
@@ -50,6 +63,7 @@ const Genart = (props) => {
           <br />
           <em>{caption.credit}</em>
         </p>
+        
 
 
         </div>
@@ -57,12 +71,12 @@ const Genart = (props) => {
     >
       
       
-    </Page>
+    </PageArtwork>
   )
 }
 
-Genart.propTypes = {
+Artwork.propTypes = {
   head: PropTypes.object.isRequired,
 }
 
-export default Genart
+export default Artwork

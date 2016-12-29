@@ -1,7 +1,7 @@
 ---
 title: My first artwork!
 date: 2016-02-14
-layout: Genart
+layout: Artwork
 artworks:
 - name: name1
   title: Title 1
@@ -20,11 +20,12 @@ artworks:
   description: description 4
   image: https://c4.staticflickr.com/9/8672/16392077371_6774ff6ecc_o.jpg
 caption: 
-  line1: text in line 1
-  line2: text in line 2
-  line3: text in line 3
-  line4: text in line 4
-  credit: text for credit
-thumbnailImage: https://c4.staticflickr.com/9/8672/16392077371_b17cf3bda8_t.jpg 
-thumbnailCaption: Artwork1 caption
+  line1: Still Life (RGB-AV A), 2016
+  line2: Custom software (color, sound), computer, speakers, projector
+  line3: Dimensions variable, landscape orientation
+  line4: Sound by Philip Rugo
+  credit: Photos by John Berens, installation view at the There's No Distance exhibition, bitforms gallery nyc.
+thumbnail:
+  image: https://c4.staticflickr.com/9/8672/16392077371_b17cf3bda8_t.jpg 
+  caption: Artwork1 caption!
 ---

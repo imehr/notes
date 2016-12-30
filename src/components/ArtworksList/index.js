@@ -3,7 +3,7 @@ import {Grid, Cell } from "react-mdl"
 
 import ArtworkPreview from "../ArtworkPreview"
 
-import styles from "./index.css"
+//import styles from "./index.css"
 
 const ArtworksList = ({ pages }) => {
   return (

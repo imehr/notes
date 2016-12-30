@@ -1,6 +1,6 @@
 import React, { PropTypes } from "react"
 import {Grid, Cell } from "react-mdl"
-import {browserHistory} from "phenomic/lib/client"
+//import {browserHistory} from "phenomic/lib/client"
 
 import PageArtwork from "../PageArtwork"
 
@@ -8,7 +8,7 @@ import styles from "./index.css"
 
 const Artwork = (props) => {
   // it's up to you to choose what to do with this layout ;)
-  const pageDate = props.head.date ? new Date(props.head.date) : null
+  //const pageDate = props.head.date ? new Date(props.head.date) : null
   const artworks = props.head.artworks
   const caption = props.head.caption
   return (

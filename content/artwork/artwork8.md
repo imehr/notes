@@ -26,6 +26,6 @@ caption:
   line4: text in line 4'
   credit: text for credit'
 thumbnail:
-  image: image: https://placeholdit.imgix.net/~text?txtsize=33&txt=130%C3%97100&w=130&h=100   
+  image: https://placeholdit.imgix.net/~text?txtsize=33&txt=130%C3%97100&w=130&h=100 
   caption: Artwork2 caption
 ---

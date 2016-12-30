@@ -4,6 +4,7 @@
   max-width: 40rem;
   margin: 1rem auto;
   padding: 1rem 0;
+  
 }
 
 .title {
@@ -30,4 +31,7 @@
   text-align: center;
   border-bottom: 0 !important;
   text-decoration: none !important;
+}
+.imgt{
+  width: 100%;
 }

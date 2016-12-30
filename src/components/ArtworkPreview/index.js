@@ -3,17 +3,17 @@ import { Link } from "phenomic"
 
 import styles from "./index.css"
 
-const ArtworkPreview = ({ __url, date, thumbnail }) => {
-  const pageDate = date ? new Date(date) : null
+const ArtworkPreview = ({ __url, thumbnail }) => {
+  //const pageDate = date ? new Date(date) : null
   const theThumbnail = thumbnail
   return (
-    <div className={ styles.wrapper }>
+    <div>
       <Link to={ __url } className={ styles.title }>
         <div>
           <img
             src={theThumbnail.image} 
-            width="100"
-            height="100"
+            
+            
           />
         </div>
       {/*
@@ -41,8 +41,7 @@ const ArtworkPreview = ({ __url, date, thumbnail }) => {
 ArtworkPreview.propTypes = {
   __url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  date: PropTypes.string,
-  thumbnail: PropTypes.opject,
+  thumbnail: PropTypes.object.isRequired,
   
 }
 

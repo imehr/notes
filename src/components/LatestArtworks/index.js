@@ -3,9 +3,9 @@ import enhanceCollection from "phenomic/lib/enhance-collection"
 
 import ArtworksList from "../../components/ArtworksList"
 
-import styles from "./index.css"
+//import styles from "./index.css"
 
-const defaultNumberOfPosts = 6
+const defaultNumberOfPosts = 100
 
 const LatestArtworks = (props, { collection }) => {
   const latestArtworks = enhanceCollection(collection, {

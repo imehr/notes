@@ -1,10 +1,10 @@
 import React, { PropTypes } from "react"
 import { Link } from "phenomic"
 import Svg from "react-svg-inline"
-import {browserHistory} from "phenomic/lib/client"
+//import {browserHistory} from "phenomic/lib/client"
 
 import twitterSvg from "../icons/iconmonstr-twitter-1.svg"
-import gitHubSvg from "../icons/iconmonstr-github-1.svg"
+//import gitHubSvg from "../icons/iconmonstr-github-1.svg"
 import backSvg from "../icons/icon-back.svg"
 import logoSvg from "../icons/logo-mehran.svg"
 
@@ -12,7 +12,7 @@ import styles from "./index.css"
 
 
 const Header = (props, { metadata: { pkg } }) => ( 
-  
+
   <header className={ styles.header }>
     <nav className={ styles.nav }>
       <div className={ styles.navPart1 }>

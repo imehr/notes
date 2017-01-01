@@ -4,6 +4,8 @@ import "./index.global.css"
 import "./highlight.global.css"
 
 import "./styles/material-grid.global.css"
+import "./styles/slick.global.css"
+import "./styles/slick-theme.global.css"
 import "react-mdl/extra/material.js"
 
 

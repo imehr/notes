@@ -25,6 +25,7 @@ caption:
   line3: text in line 3'
   line4: text in line 4'
   credit: text for credit'
+featuredArtwork: https://unsplash.it/600/400/?random
 thumbnail:
   image: image: https://placeholdit.imgix.net/~text?txtsize=33&txt=130%C3%97100&w=130&h=100   
   caption: Artwork2 caption

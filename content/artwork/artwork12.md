@@ -25,6 +25,7 @@ caption:
   line3: Dimensions variable, landscape orientation
   line4: Sound by Philip Rugo
   credit: Photos by John Berens, installation view at the There's No Distance exhibition, bitforms gallery nyc.
+featuredArtwork: https://unsplash.it/602/402/?random
 thumbnail:
   image: https://placeholdit.imgix.net/~text?txtsize=33&txt=130%C3%97100&w=130&h=100  
   caption: Artwork1 caption!

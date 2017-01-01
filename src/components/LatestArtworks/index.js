@@ -1,7 +1,7 @@
 import React, { PropTypes } from "react"
 import enhanceCollection from "phenomic/lib/enhance-collection"
-
 import ArtworksList from "../../components/ArtworksList"
+import AutoPlaySlider from "../../components/AutoPlaySlider"
 
 //import styles from "./index.css"
 
@@ -13,16 +13,12 @@ const LatestArtworks = (props, { collection }) => {
     sort: "date",
     reverse: true,
   })
-  .slice(0, props.numberOfPosts || defaultNumberOfPosts)
+  
 
   return (
     <div>
-      {/*
-      <h2 className={ styles.latestArtworks }>
-        { "Latest Posts" }
-      </h2>
-      */}
-      <ArtworksList pages={ latestArtworks } />
+      <AutoPlaySlider featuredArtworks={ latestArtworks.slice(0, 3) }/>
+      <ArtworksList pages={ latestArtworks.slice(0, props.numberOfPosts || defaultNumberOfPosts) } />
     </div>
   )
 }

@@ -8,14 +8,13 @@ import ArtworkPreview from "../ArtworkPreview"
 const ArtworksList = ({ pages }) => {
   return (
     <div>
+
+
+    
       {
       pages.length
       ? (
-
-        
-
-
-        <Grid style={{width: '100%', margin: 'auto'}}>
+        <Grid style={{width: '100%', margin: 'auto'}} noSpacing={ false }>
           { pages.map((page) => (
             <Cell
               key={ page.__url  }
@@ -28,17 +27,7 @@ const ArtworksList = ({ pages }) => {
             </Cell>
           )) }
         </Grid>
-
-
-
-
-
-
       )
-
-
-
-
       : "No posts yet."
     }
     </div>
@@ -50,29 +39,3 @@ ArtworksList.propTypes = {
 }
 
 export default ArtworksList
-
-{/*
-
-      <Grid className={ classNames(styles.posts) }>
-        { posts.map((post) => (
-          <Cell
-            key={ post.__url }
-            col={ 12 }
-            shadow={ 0 }
-          >
-            <PostPreview
-              __url={ post.__url }
-              date={ post.date }
-              title={ post.title }
-              description={ post.description }
-              image={ post.image }
-            />
-          </Cell>
-          ))
-        }
-      </Grid>
-
-*/}
-
-
-

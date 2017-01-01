@@ -7,32 +7,19 @@ const ArtworkPreview = ({ __url, thumbnail }) => {
   //const pageDate = date ? new Date(date) : null
   const theThumbnail = thumbnail
   return (
-    <div>
+    <div className={ styles.imgwrapper }>
       <Link to={ __url } className={ styles.title }>
-        <div>
+
           <img
-            src={theThumbnail.image} 
-            
-            
+            src={theThumbnail.image}
+            className={ styles.imgt }
+
+
           />
-        </div>
-      {/*
-        <span className={ styles.meta }>
-          {theThumbnail.caption }          
-        </span>
-      */}
+
       </Link>
-      
-{/*
-       <div className={ styles.meta }>
-         {
-           pageDate &&
-             <time key={ pageDate.toISOString() }>
-               { pageDate.toDateString() }
-             </time>
-         }
-       </div>
-*/}
+
+
 
     </div>
   )
@@ -42,7 +29,7 @@ ArtworkPreview.propTypes = {
   __url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   thumbnail: PropTypes.object.isRequired,
-  
+
 }
 
 export default ArtworkPreview

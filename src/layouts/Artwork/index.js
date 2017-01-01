@@ -1,5 +1,8 @@
 import React, { PropTypes } from "react"
 import {Grid, Cell } from "react-mdl"
+import ReactPlayer from "react-player"
+
+
 //import {browserHistory} from "phenomic/lib/client"
 
 import PageArtwork from "../PageArtwork"
@@ -10,13 +13,17 @@ const Artwork = (props) => {
   // it's up to you to choose what to do with this layout ;)
   //const pageDate = props.head.date ? new Date(props.head.date) : null
   const artworks = props.head.artworks
+  const videofile = props.head.videofile
   const caption = props.head.caption
   return (
+    
+    
+  
     <PageArtwork
       { ...props }
       header={
         <div>
-          
+            
           {/* 
           <header className={ styles.header }>
             {
@@ -27,6 +34,29 @@ const Artwork = (props) => {
             }
           </header>
           */}
+
+
+      {  
+        videofile
+        ? <Grid style={{width: '100%', margin: 'auto'}}>
+          <Cell 
+            col={ 12 }
+            phone={ 12 }
+            tablet={ 12 }
+          >
+            <div className={ styles.videoWrapper }>
+              {/* solution for fluid video player :  https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php  */}
+              <ReactPlayer url= {videofile}  />
+              
+            </div>
+          </Cell>
+        </Grid>
+        : null
+      }    
+  
+      
+
+
 
         <Grid style={{width: '100%', margin: 'auto'}}>
           { artworks.map((theArtwork) => (

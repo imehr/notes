@@ -16,6 +16,9 @@
     "deploy": "./scripts/deploy.sh"
   },
   "phenomic": {
+    "assets": "assets",
+    "nojekyll": true,
+    "devHost": "0.0.0.0",
     "CNAME": false
   },
   "#babel": "webpack-(development|production) are useful for webpack 2, otherwise use development|production",

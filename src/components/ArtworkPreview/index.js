@@ -3,7 +3,7 @@ import { Link } from "phenomic"
 
 import styles from "./index.css"
 
-const ArtworkPreview = ({ __url, thumbnail }) => {
+const ArtworkPreview = ({ __url, thumbnail, title }) => {
   //const pageDate = date ? new Date(date) : null
   const theThumbnail = thumbnail
   return (

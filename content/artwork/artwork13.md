@@ -2,6 +2,7 @@
 title: My first artwork!
 date: 2016-02-14
 layout: Artwork
+gridtype: 1
 artworks:
 - name: name1
   title: Title 1

@@ -2,6 +2,7 @@
 title: My Second artwork!
 date: 2016-02-16
 layout: Artwork
+gridtype: 1
 artworks:
 - name: name1'
   title: Title 1'

@@ -2,6 +2,7 @@
 title: My first artwork!
 date: 2016-02-14
 layout: Artwork
+gridtype: 1
 videofile: https://www.youtube.com/watch?v=ysz5S6PUM-U
 artworks:
 - name: name1

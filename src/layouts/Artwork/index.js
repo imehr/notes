@@ -15,6 +15,7 @@ const Artwork = (props) => {
   const artworks = props.head.artworks
   const videofile = props.head.videofile
   const caption = props.head.caption
+  const gridtype = props.head.gridtype
   return (
     
     
@@ -54,29 +55,67 @@ const Artwork = (props) => {
         : null
       }    
   
-      
 
 
 
-        <Grid style={{width: '100%', margin: 'auto'}}>
-          { artworks.map((theArtwork) => (
-            <Cell
-              key={ theArtwork.name }
-              col={ 12 }
-              phone={ 12 }
-              tablet={ 12 }
-            >
-              <img 
-                className={ styles.img }
-                src={ theArtwork.image } />
-              {/*
-              <h4>{ theArtwork.title }</h4>
-              <p>{ theArtwork.description }</p> 
-              */}
 
-            </Cell>
-          )) }
-        </Grid>
+
+
+
+       {gridtype == 2 
+          ?
+
+            <Grid style={{width: '100%', margin: 'auto'}}>
+              { artworks.map((theArtwork, index) => (
+                index%2 
+                ? 
+                <Cell
+                  key={ index }
+                  col={ 6 }
+                  phone={ 6 }
+                  tablet={ 6 }
+                >
+                  <img 
+                    className={ styles.img }
+                    src={ theArtwork.image } />
+
+
+                </Cell>
+                : 
+                  <Cell
+                    key={ index }
+                    col={ 6 }
+                    phone={ 6 }
+                    tablet={ 6 }
+                  >
+                    <img 
+                      className={ styles.img }
+                      src={ theArtwork.image } />
+
+
+                  </Cell>
+                )) 
+              }
+            </Grid>
+
+        
+          :
+            <Grid style={{width: '100%', margin: 'auto'}}>
+              { artworks.map((theArtwork) => (
+                <Cell
+                  key={ theArtwork.name }
+                  col={ 12 }
+                  phone={ 12 }
+                  tablet={ 12 }
+                >
+                  <img 
+                    className={ styles.img }
+                    src={ theArtwork.image } />
+                </Cell>
+              )) }
+            </Grid>
+
+          }
 
 
         
@@ -110,3 +149,6 @@ Artwork.propTypes = {
 }
 
 export default Artwork
+
+
+

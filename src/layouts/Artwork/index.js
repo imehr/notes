@@ -101,9 +101,9 @@ const Artwork = (props) => {
         
           :
             <Grid style={{width: '100%', margin: 'auto'}}>
-              { artworks.map((theArtwork) => (
+              { artworks.map((theArtwork,index) => (
                 <Cell
-                  key={ theArtwork.name }
+                  key={ index }
                   col={ 12 }
                   phone={ 12 }
                   tablet={ 12 }

@@ -17,7 +17,7 @@ const LatestArtworks = (props, { collection }) => {
 
   return (
     <div>
-      <AutoPlaySlider featuredArtworks={ latestArtworks.slice(0, 3) }/>
+      <AutoPlaySlider featuredArtworks={ latestArtworks.slice(0, 6) }/>
       <ArtworksList pages={ latestArtworks.slice(0, props.numberOfPosts || defaultNumberOfPosts) } />
     </div>
   )

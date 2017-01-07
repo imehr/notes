@@ -13,7 +13,9 @@
   line-height: 0;
   display: block;
 }
-
+.title:hover {
+  opacity: 0.3;
+}
 .meta {
   font-size: 0.75rem;
   opacity: 0.6;
@@ -39,3 +41,20 @@
 .imgwrapper{
   width: 100%;
 }
+
+
+  .hover_text{
+  display: none;
+  position: absolute;
+  opacity: 1;
+  font-family: 'Source Code Pro','Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 10px 0 0 5px;
+}
+  .hovered .hover_text{
+  display: inline!important;
+}
+
+

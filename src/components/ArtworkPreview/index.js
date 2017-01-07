@@ -1,35 +1,51 @@
-import React, { PropTypes } from "react"
+import React, { PropTypes, Component } from "react"
+import classNames from 'classnames';
 import { Link } from "phenomic"
 
 import styles from "./index.css"
 
-const ArtworkPreview = ({ __url, thumbnail, title }) => {
-  //const pageDate = date ? new Date(date) : null
-  const theThumbnail = thumbnail
-  return (
-    <div className={ styles.imgwrapper }>
-      <Link to={ __url } className={ styles.title }>
+export default class ArtworkPreview extends Component {
+  constructor (props) {
+    super(props);
+    this.state = {
+      isHovered: false
+    };
+  }  
+  render() {
+    const { __url, thumbnail, title, caption } = this.props;
+    //const pageDate = date ? new Date(date) : null
+    const theThumbnail = thumbnail
+    const theCaption = caption
+    return (
+      <div 
+        className={classNames([styles.imgwrapper], { [styles.hovered]: this.state.isHovered })}
+        onMouseOver={() => this.setState({isHovered: true})} 
+        onMouseOut={() => this.setState({isHovered: false})} 
+      >
+        <span className={styles.hover_text } >
+          
+            { theCaption.line1 } <br />
+          
 
-          <img
-            src={theThumbnail.image}
-            className={ styles.imgt }
+          
+        </span>
 
+        <Link to={ __url } className={ styles.title }>
 
-          />
+            <img
+              src={theThumbnail.image}
+              className={ styles.imgt }
+            />
 
-      </Link>
-
-
-
-    </div>
-  )
+        </Link>
+      </div>
+    );
+  }
 }
 
 ArtworkPreview.propTypes = {
   __url: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
-  thumbnail: PropTypes.object.isRequired,
-
+  caption: PropTypes.object.isRequired,
+  thumbnail: PropTypes.object.isRequired
 }
-
-export default ArtworkPreview

@@ -1,0 +1,45 @@
+---
+title: Mehran Mozaffari Generative Art
+date: 2015-03-18
+layout: Artwork
+gridtype: 2
+videofile: 
+artworks:
+- image: ../../assets/s_006/a01.png
+- image: ../../assets/s_006/a02.png
+- image: ../../assets/s_006/a03.png
+- image: ../../assets/s_006/a04.png
+- image: ../../assets/s_006/a05.jpg 
+- image: ../../assets/s_006/a06.jpg
+- image: ../../assets/s_006/a07.jpg
+- image: ../../assets/s_006/a08.png
+- image: ../../assets/s_006/a09.jpg
+- image: ../../assets/s_006/a10.jpg
+- image: ../../assets/s_006/a11.png
+- image: ../../assets/s_006/a12.png
+- image: ../../assets/s_006/a13.png
+- image: ../../assets/s_006/a14.jpg
+- image: ../../assets/s_006/a15.jpg
+- image: ../../assets/s_006/a17.png
+- image: ../../assets/s_006/a18.png
+- image: ../../assets/s_006/a19.png
+- image: ../../assets/s_006/a20.png
+- image: ../../assets/s_006/a21.png
+- image: ../../assets/s_006/a22.png
+- image: ../../assets/s_006/a23.png
+- image: ../../assets/s_006/a24.png
+- image: ../../assets/s_006/a25.png
+- image: ../../assets/s_006/a26.jpg
+- image: ../../assets/s_006/a27.png
+               
+caption: 
+  line1: UNTITLED, 2014
+  line2: Custom software (color, sound), computer, handwritten letters in Persian Nastaliq style, calligraphy
+  line3: Dimensions variable, landscape orientation, square
+  line4: 
+  credit: 
+featuredArtwork: ../assets/s_006/f.jpg
+thumbnail:
+  image: ../assets/s_006/t.jpg 
+  caption: Artwork1 caption!
+---

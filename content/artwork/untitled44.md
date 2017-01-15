@@ -1,0 +1,42 @@
+---
+title: Mehran Mozaffari Generative Art
+date: 2017-01-15
+layout: Artwork
+gridtype: 1
+videofile: 
+artworks:
+- image: ../../assets/s_044/a02.jpg
+- image: ../../assets/s_044/a03.jpg
+- image: ../../assets/s_044/a04.jpg
+- image: ../../assets/s_044/a05.jpg 
+- image: ../../assets/s_044/a06.jpg
+- image: ../../assets/s_044/a07.jpg
+- image: ../../assets/s_044/a08.jpg
+- image: ../../assets/s_044/a09.jpg
+- image: ../../assets/s_044/a10.jpg
+- image: ../../assets/s_044/a11.jpg
+- image: ../../assets/s_044/a12.jpg
+- image: ../../assets/s_044/a13.jpg 
+- image: ../../assets/s_044/a14.jpg
+- image: ../../assets/s_044/a15.jpg
+- image: ../../assets/s_044/a16.jpg
+- image: ../../assets/s_044/a17.jpg
+- image: ../../assets/s_044/a18.jpg
+- image: ../../assets/s_044/a19.jpg
+- image: ../../assets/s_044/a20.jpg
+- image: ../../assets/s_044/a21.jpg 
+- image: ../../assets/s_044/a22.jpg
+- image: ../../assets/s_044/a23.jpg
+- image: ../../assets/s_044/a24.jpg
+             
+caption: 
+  line1: UNTITLED, 2017
+  line2: Custom software (color, sound), computer, handwritten letters in Persian Nastaliq style, calligraphy, typography
+  line3: Dimensions variable, landscape orientation, square
+  line4: 
+  credit: 
+featuredArtwork: ../assets/s_044/a06.jpg
+thumbnail:
+  image: ../assets/s_044/t.jpg 
+  caption: Artwork1 caption!
+---

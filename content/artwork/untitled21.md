@@ -3,7 +3,7 @@ title: Mehran Mozaffari Generative Art
 date: 2015-03-19
 layout: Artwork
 gridtype: 1
-videofile: 
+videofile: https://vimeo.com/198546302
 artworks:
 - image: ../../assets/s_021/a02.png
 - image: ../../assets/s_021/a03.png
